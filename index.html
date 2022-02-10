@@ -6,19 +6,40 @@
     <!-- holds the information about the webpage. Tells the browser how it should handle the page.
     -->
     <script type="text/javascript" charset="utf-8">
-  (function (g, e, n, es, ys) {
-    g['_genesysJs'] = e;
-    g[e] = g[e] || function () {
-      (g[e].q = g[e].q || []).push(arguments)
-    };
-    g[e].t = 1 * new Date();
-    g[e].c = es;
-    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
-  })(window, 'Genesys', 'https://apps.usw2.pure.cloud/genesys-bootstrap/genesys.min.js', {
-    environment: 'usw2',
-    deploymentId: 'e0690f68-5a89-4d4f-a86b-b3cc17f837f8'
-  });
-</script>
+      (function (g, e, n, es, ys) {
+        g["_genesysJs"] = e;
+        g[e] =
+          g[e] ||
+          function () {
+            (g[e].q = g[e].q || []).push(arguments);
+          };
+        g[e].t = 1 * new Date();
+        g[e].c = es;
+        ys = document.createElement("script");
+        ys.async = 1;
+        ys.src = n;
+        ys.charset = "utf-8";
+        document.head.appendChild(ys);
+      })(
+        window,
+        "Genesys",
+        "https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js",
+        {
+          environment: "use1",
+          deploymentId: "50d5f3cb-a9da-4832-8e5a-d1c323f5bf0d",
+        }
+        
+      );
+      Genesys("command", "Database.set", {
+       messaging: {
+          customAttributes: {
+          department: "sales",
+          property_type: "apartment",
+          device: "mobile"
+    }
+  }
+});
+    </script>
 
     <meta charset="UTF-8" />
     <!-- They give the browser the right encoding mechanism. This is 
@@ -27,6 +48,9 @@
     <!-- this is what shows in the tab-->
     <meta name="description" content="so good" />
     <!-- the description is what -->
+
+
+    <link rel= "stylesheet" href = "css/styles.css">
   </head>
 
   <body>
@@ -34,7 +58,8 @@
       <tr>
         <td>
           <img
-            src="Peter.jfif"  alt="Peter profile Pic"
+            src="C:\Users\pstoltenberg\OneDrive - Avtex Solutions LLC\Peter\Web Development\HTML - Personal Site\Images\Peter.jfif"
+            alt="Peter profile Pic"
           />
         </td>
         <td>
@@ -51,7 +76,8 @@
           <p>
             I am a technology consultant working in the Contact Center space,
             focused primarily around the Genesys Cloud suite of technologies. I
-            studied Industrial Engineering at the University of Minnesota and graduated in 2019.
+            studied Industrial engineering at the University of Minnesota and am
+            a willing learner.
           </p>
         </td>
       </tr>
@@ -119,13 +145,14 @@
 
     <h3>
       <a
-        href="hobbies.html">Hobbies</a
+        href="C:\Users\pstoltenberg\OneDrive - Avtex Solutions LLC\Peter\Web Development\HTML - Personal Site\hobbies.html"
+        >Hobbies</a
       >
     </h3>
 
     <h3>
       <a
-        href="contactPage.html"
+        href="C:\Users\pstoltenberg\OneDrive - Avtex Solutions LLC\Peter\Web Development\HTML - Personal Site\contactPage.html"
         >Contact Me</a
       >
     </h3>
