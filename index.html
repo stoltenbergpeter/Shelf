@@ -6,32 +6,19 @@
     <!-- holds the information about the webpage. Tells the browser how it should handle the page.
     -->
     <script type="text/javascript" charset="utf-8">
-      (function (g, e, n, es, ys) {
-        g["_genesysJs"] = e;
-        g[e] =
-          g[e] ||
-          function () {
-            (g[e].q = g[e].q || []).push(arguments);
-          };
-        g[e].t = 1 * new Date();
-        g[e].c = es;
-        ys = document.createElement("script");
-        ys.async = 1;
-        ys.src = n;
-        ys.charset = "utf-8";
-        document.head.appendChild(ys);
-      })(
-        window,
-        "Genesys",
-        "https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js",
-        {
-          environment: "use1",
-          deploymentId: "50d5f3cb-a9da-4832-8e5a-d1c323f5bf0d",
-        }
-        
-      );
-      
-    </script>
+  (function (g, e, n, es, ys) {
+    g['_genesysJs'] = e;
+    g[e] = g[e] || function () {
+      (g[e].q = g[e].q || []).push(arguments)
+    };
+    g[e].t = 1 * new Date();
+    g[e].c = es;
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+    environment: 'use1',
+    deploymentId: '50d5f3cb-a9da-4832-8e5a-d1c323f5bf0d'
+  });
+</script>
 
     <meta charset="UTF-8" />
     <!-- They give the browser the right encoding mechanism. This is 
