@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<!--declares the version of html that we're using.. HTML 5. Tells the browser how
-    to render it-->
-<html lang="en">
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
   <head>
-    <!-- holds the information about the webpage. Tells the browser how it should handle the page.
-    -->
-  <script type="text/javascript" charset="utf-8">
+        <title>Home | Denver Water</title>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-76d8248f92cdd52ee6e",applicationID:"961187988"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2879137-2", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<link rel="canonical" href="https://www.denverwater.org/" />
+<link rel="shortlink" href="https://www.denverwater.org/" />
+<meta name="description" content="Denver Water proudly serves high-quality water and promotes its efficient use to 1.5 million people in the city of Denver and many surrounding suburbs. Established in 1918, the utility is a public agency funded by water rates and new tap fees, not taxes. It is Colorado’s oldest and largest water utility." />
+<meta property="og:description" content="Denver Water proudly serves high-quality water and promotes its efficient use to 1.4 million people in the city of Denver and many surrounding suburbs. Established in 1918, the utility is a public agency funded by water rates and new tap fees, not taxes." />
+<meta property="og:image" content="https://www.denverwater.org/sites/default/files/dw-logo-large.png" />
+<meta property="og:image:url" content="https://www.denverwater.org/sites/default/files/dw-logo-large.png" />
+<meta name="msvalidate.01" content="013D718CAE3C0B51FBA750FAF1A02464" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@denverwater" />
+<meta name="twitter:description" content="TAP: News to Hydrate Your Mind" />
+<meta name="twitter:title" content="Home" />
+<meta name="twitter:url" content="https://www.denverwater.org/home" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/sites/default/files/dw-favicon.png" type="image/png" />
+<link rel="alternate" hreflang="en" href="https://www.denverwater.org/" />
+
+  <link rel="stylesheet" media="all" href="/sites/default/files/css/css_OoDGl554QcNQ2kWXIuFs9h7EaqZfZsO5TjWCxT0hyYQ.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_sqOIz1qnAN5m00bi2Hk4ho_3-vNGFHaqZsSZ64dQRbo.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Lato:300,400,700|Lora|PT+Sans" />
+
+  <script src="https://kit.fontawesome.com/3dc7b5e47f.js" defer crossorigin="anonymous"></script>
+
+    <!-- include IF Vox before closing HEAD tag -->
+<script type="text/javascript">(function(){setTimeout(function(){var d=document,t='script',f=d.getElementsByTagName(t)[0],s=d.createElement(t);s.type='text/java'+t;s.async=true;s.src='//d2rnkf2kqy5m6h.cloudfront.net/vxc/KI02xWfuRC64AHmMTx-WOA/surveys.js?'+(new Date)/1;f.parentNode.insertBefore(s,f);},1);})();</script>
+<meta name="google-site-verification" content="ZYVbvyqcU6QmIyhJGRHD1lGBJ_GmFYRyyeL6LuOBFEs" />
+   <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
     g[e] = g[e] || function () {
@@ -19,6 +46,1312 @@
     deploymentId: '50d5f3cb-a9da-4832-8e5a-d1c323f5bf0d'
   });
 </script>
+  </head>
+  <body  class="is-path-frontpage is-page-node-type-page">
+      
+<a href="#main-content" class="skip-link visually-hidden visually-hidden--focusable" id="skip-link">
+      Skip to main content
+  </a>
+  
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<header class="header" role="banner">
+  
+
+<div class="views-element-container block block-views block-views-blockhomepage-header-block-1" id="block-views-block-homepage-header-block-1">
+  
+    
+      <div><div class="view view-homepage-header view-id-homepage_header view-display-id-block_1 js-view-dom-id-e1e130bef8ed7c8dd3522ffafeb3f7dfff3deba99ede1960a2cc61374e6bcf09">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">  <div class="header-image-wrap">
+    <div class="header-image" style="background:url(       /sites/default/files/2017-06/home_hdr-small-hands-faucet.jpg
+  ) top no-repeat;"></div>
+  </div></div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </div>
+<div class="overlay overlay-bg">
+    <div class="top-utils">
+      <div class="search-container">
+        <div class="search container-inline">
+        <div class="block block-views block-views-exposed-filter-blocksearch-page-1">
+  
+    
+      <form class="views-exposed-form search-form" data-drupal-selector="views-exposed-form-search-page-1" action="/search" method="get" id="views-exposed-form-search-page-1" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <div class="js-form-item form-item js-form-type-search-api-autocomplete form-type-search-api-autocomplete js-form-item-search-term form-item-search-term form-no-label">
+        <input class="search-box form-autocomplete form-text" placeholder="What can we help you find today?" data-drupal-selector="edit-search-term" data-search-api-autocomplete-search="search" data-autocomplete-path="/search_api_autocomplete/search?display=page_1&amp;&amp;filter=search-term" type="text" id="edit-search-term" name="search-term" value="" size="30" maxlength="128" />
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><button  name="search-button" data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Apply" class="button js-form-submit form-submit search-button" ><i class="fas fa-search"></i></button>
+</div>
+
+</div>
+
+</form>
+
+  </div>
+
+        </div>
+      </div>
+      <div class="actions-container">
+        <div class="btn pay-bill">
+          <a href="/pay-my-bill">Pay My Bill</a>
+        </div>
+        <div class="btn manage-my-account">
+          <a href="https://myaccount.denverwater.org" target="_blank">Manage My Account</a>
+        </div>
+      </div>
+      <div class="contact-info">
+        <span class="contact-label">Customer Care:</span>
+        <span class="contact-number"><a href="tel:303-893-2444">303-893-2444</a></span>
+      </div>
+    </div>
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--header-utility-menu">
+            
+  <h2 class="visually-hidden" id="-menu">Header Utility Menu</h2>
+  
+
+        
+
+
+              <ul class="menu">
+          <li class="customer-care">Customer Care:</li>
+      <li class="google-translate"><div id="google_translate_element"></div>
+</li>
+                <li class="menu-item">
+        <a href="/about-us" data-drupal-link-system-path="node/162">About Us</a>
+              </li>
+                <li class="menu-item">
+        <a href="/careers" data-drupal-link-system-path="node/15">Careers</a>
+              </li>
+                <li class="menu-item">
+        <a href="/contact" data-drupal-link-system-path="node/1067">Contact Us</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+<div class="logo-wrap">
+  <div class="shrink-wrap">
+    <a href="/"><img src="/sites/default/files/DW-Horizontal.png" alt="Denver Water logo" class="dw-logo"/></a>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<div class="sticky-nav">
+  <button class="menu-button js-global-nav-menu-link" title="menu">
+    <span class="menu-text">menu</span>
+    <i class="menu-icon fas fa-bars"></i>
+  </button>
+  <nav role="navigation" aria-labelledby="block-dw-zen-main-menu-menu" id="block-dw-zen-main-menu" class="block block-menu navigation menu--main">
+    <span class="mobile-menu-header">Menu</span>
+    <div class="dw-mega residential">
+        
+
+
+<h2 id="-menu">
+  <a href="#n" role="menuitem">
+    Residential <i class="fal fa-angle-down"></i>
+  </a>
+</h2>
+
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+        
+              <ul class="menu menu-level--0" tabindex="-1">
+                          <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/residential/billing-and-rates" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/1">Billing &amp; Rates</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/pay-my-bill" class="menu-item level-1" data-drupal-link-system-path="node/2">Pay My Bill</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/billing-and-rates/2022-rates" class="menu-item level-1" data-drupal-link-system-path="node/21863">2022 Residential Water Rates</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/billing-and-rates/2021-rates" class="menu-item level-1" data-drupal-link-system-path="node/13320">2021 Residential Water Rates</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/billing-and-rates/understanding-your-bill" class="menu-item level-1" data-drupal-link-system-path="node/4">Understanding Your Bill</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/billing-and-rates/phishing" class="menu-item level-1" data-drupal-link-system-path="node/11961">Beware of Phishing Scams</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/billing-and-rates/other-fees" class="menu-item level-1" data-drupal-link-system-path="node/5">Other Fees</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/residential/services-and-information" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/6">Services &amp; Information</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/services-and-information/start-or-stop-service" class="menu-item level-1" data-drupal-link-system-path="node/7">Start/Stop Service</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/services-and-information/transferring-service" class="menu-item level-1" data-drupal-link-system-path="node/8">Transferring Service</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/services-and-information/homeowner-responsibility" class="menu-item level-1" data-drupal-link-system-path="node/9">Homeowner Responsibility</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/services-and-information/landlord-tenant-water-service-policy" class="menu-item level-1" data-drupal-link-system-path="node/10">Landlord/Tenant Water Service Policy</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/services-and-information/received-a-letter" class="menu-item level-1" data-drupal-link-system-path="node/11">Received a Letter</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/services-and-information/troubleshooting-and-repairs" class="menu-item level-1" data-drupal-link-system-path="node/16">Troubleshooting &amp; Repairs</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/12">Rebates &amp; Efficiency Tips</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/residential-rebates" class="menu-item level-1" data-drupal-link-system-path="node/23">Residential Rebates</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/watersense" class="menu-item level-1" data-drupal-link-system-path="node/13">WaterSense</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/summer-watering-rules" class="menu-item level-1" data-drupal-link-system-path="node/22">Rules for Outdoor Water Use</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/outdoor-water-use-report" class="menu-item level-1" data-drupal-link-system-path="node/1509">Outdoor Water Use Report</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/watering-your-lawn" class="menu-item level-1" data-drupal-link-system-path="node/4083">Watering Your Lawn</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/remodel-your-yard" class="menu-item level-1" data-drupal-link-system-path="node/21">Remodel Your Yard</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/water-wise" class="menu-item level-1" data-drupal-link-system-path="node/20">Water Wise Landscape Handbook</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/residential/rebates-and-conservation-tips/self-audit" class="menu-item level-1" data-drupal-link-system-path="node/19">Indoor Self-Audit</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        <div class="block block-block-content block-block-content5c661747-2667-4acb-8cd4-c0a3f078dfc9">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2018-04/toilet-rebate-promo_0.jpg?itok=2qhi0Gum" width="550" height="360" alt="Toilet rebate" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Get up to a <a href="/residential/rebates-and-conservation-tips/residential-rebates">$100 rebate</a> on a WaterSense-labeled toilet.</p>
+</div>
+      
+  </div>
+
+
+    </div>
+    <div class="dw-mega business">
+        
+
+
+<h2 id="-menu">
+  <a href="#n" role="menuitem">
+    Business <i class="fal fa-angle-down"></i>
+  </a>
+</h2>
+
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+        
+              <ul class="menu menu-level--0" tabindex="-1">
+                          <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/business/billing-and-rates" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/24">Billing &amp; Rates</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/pay-my-bill" class="menu-item level-1" data-drupal-link-system-path="node/2">Pay My Bill</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/billing-and-rates/2022-rates" class="menu-item level-1" data-drupal-link-system-path="node/21868">2022 Business Water Rates</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/billing-and-rates/2021-rates" class="menu-item level-1" data-drupal-link-system-path="node/13321">2021 Business Water Rates</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/billing-and-rates/phishing" class="menu-item level-1" data-drupal-link-system-path="node/11986">Beware of Phishing Scams</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/billing-and-rates/other-fees" class="menu-item level-1" data-drupal-link-system-path="node/26">Other Fees</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/business/services-and-information" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/27">Services &amp; Information</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/services-and-information/car-wash-certification-program" class="menu-item level-1" data-drupal-link-system-path="node/30">Car Wash Certification Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/services-and-information/start-or-stop-service" class="menu-item level-1" data-drupal-link-system-path="node/844">Start/Stop Service</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/services-and-information/transferring-service" class="menu-item level-1" data-drupal-link-system-path="node/29">Transferring Service</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/services-and-information/received-a-letter" class="menu-item level-1" data-drupal-link-system-path="node/845">Received a Letter</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/32">Rebates &amp; Efficiency Tips</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/commercial-indoor-issues" class="menu-item level-1" data-drupal-link-system-path="node/1576">Commercial Indoor Water Use Issues</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/commercial-outdoor-issues" class="menu-item level-1" data-drupal-link-system-path="node/1581">Commercial Outdoor Water Use Issues</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/commercial-rebates" class="menu-item level-1" data-drupal-link-system-path="node/33">Commercial Rebates</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/summer-watering-rules" class="menu-item level-1" data-drupal-link-system-path="node/1587">Rules for Outdoor Water Use</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/watersense" class="menu-item level-1" data-drupal-link-system-path="node/34">WaterSense</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/hotels" class="menu-item level-1" data-drupal-link-system-path="node/35">Hotels</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/restaurants" class="menu-item level-1" data-drupal-link-system-path="node/36">Restaurants</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/business/rebates-and-conservation-tips/commercial-car-wash" class="menu-item level-1" data-drupal-link-system-path="node/37">Commercial Car Washes</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/permits-and-licenses" class="menu-item level-0" data-drupal-link-system-path="node/38">Permits &amp; Licenses</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        <div class="block block-block-content block-block-content0b727cd7-affd-4aee-8006-6d823a710674">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2021-08/toilet-rebate-promo_0.jpg?itok=8C6yKtsw" width="550" height="360" alt="Denver Water offers rebates on new fixtures and appliances, including some WaterSense-labeled products." loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Save your business water and money with Denver Water’s <a data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="f4413dc7-bc18-4308-847e-4985d4c4d8a1" href="/business/rebates-and-conservation-tips/commercial-rebates">rebates</a>.</p>
+</div>
+      
+  </div>
+
+
+    </div>
+    <div class="dw-mega contractors">
+        
+
+
+<h2 id="-menu">
+  <a href="#n" role="menuitem">
+    Contractors <i class="fal fa-angle-down"></i>
+  </a>
+</h2>
+
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+        
+              <ul class="menu menu-level--0" tabindex="-1">
+                          <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/contractors/construction-information" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/39">Construction Information</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/design-standards" class="menu-item level-1" data-drupal-link-system-path="node/1494">Design Standards</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/new-water-service-connections" class="menu-item level-1" data-drupal-link-system-path="node/41">New Water Service Connections</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/plan-reviews" class="menu-item level-1" data-drupal-link-system-path="node/42">Plan Reviews</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/backflow-prevention-program" class="menu-item level-1" data-drupal-link-system-path="node/43">Cross-Connection Control and Backflow Prevention Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/outage-notification" class="menu-item level-1" data-drupal-link-system-path="node/1355">Water Outage Notification</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/scrape-off-redevelopment-policy" class="menu-item level-1" data-drupal-link-system-path="node/44">Scrape-off/Redevelopment Policy</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/locate-lines-before-digging" class="menu-item level-1" data-drupal-link-system-path="node/45">Locate Lines Before Digging</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/replacing-lead-service-lines" class="menu-item level-1" data-drupal-link-system-path="node/361">Replacing Lead Service Lines</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/system-development-charges" class="menu-item level-1" data-drupal-link-system-path="node/46">System Development Charges</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/other-fees" class="menu-item level-1" data-drupal-link-system-path="node/1005">Other Fees</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/soil-amendment-program" class="menu-item level-1" data-drupal-link-system-path="node/47">Soil Amendment Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/gis-maps-and-data-requests" class="menu-item level-1" data-drupal-link-system-path="node/48">GIS Maps and Data Requests</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/accessory-dwelling-units" class="menu-item level-1" data-drupal-link-system-path="node/8250">Accessory Dwelling Units</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/contractors/bid-and-contract-opportunities" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/49">Bid &amp; Contract Opportunities</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/bid-and-contract-opportunities/capital-project-prequalification" class="menu-item level-1" data-drupal-link-system-path="node/50">Capital Project Prequalification</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/bid-and-contract-opportunities/supplier-diversity-program" class="menu-item level-1" data-drupal-link-system-path="node/51">Supplier Diversity Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/bid-and-contract-opportunities/tax-exemption" class="menu-item level-1" data-drupal-link-system-path="node/1168">Tax Exemption Certificates, W-9 and ACH Payment Authorization</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/contractors/permits-and-licenses" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/38">Permits &amp; Licenses</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/permits-and-licenses/construction-forms" class="menu-item level-1" data-drupal-link-system-path="node/52">Construction Forms</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/construction-information/hydrant-use-program" class="menu-item level-1" data-drupal-link-system-path="node/53">Hydrant Use Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/contractors/permits-and-licenses/licenses-for-construction-water" class="menu-item level-1" data-drupal-link-system-path="node/54">Licenses for Construction Water</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        <div class="block block-block-content block-block-contentf522df33-a638-4d40-bd11-7de9c3cc8875">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2017-03/engr-standards.jpg?itok=FeNTAC72" width="550" height="360" alt="Engineering Standards Sample" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Our <a href="/contractors/construction-information/design-standards">Design Standards</a> page gives you everything you need at your fingertips.</p></div>
+      
+  </div>
+
+
+    </div>
+    <div class="dw-mega education">
+        
+
+
+<h2 id="-menu">
+  <a href="#n" role="menuitem">
+    Education <i class="fal fa-angle-down"></i>
+  </a>
+</h2>
+
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+        
+              <ul class="menu menu-level--0" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/educational-articles" class="menu-item level-0" data-drupal-link-system-path="node/63">Educational Articles</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/youth-education-program" class="menu-item level-0" data-drupal-link-system-path="node/64">Youth Education Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/weather-reporting-and-data" class="menu-item level-0" data-drupal-link-system-path="node/65">Weather Reporting &amp; Data</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/video-gallery" class="menu-item level-0" data-drupal-link-system-path="node/66">Video Gallery</a>
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/education/outreach" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/67">Outreach</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/outreach/sponsorship-program" class="menu-item level-1" data-drupal-link-system-path="node/68">Sponsorship Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/outreach/water-trailer" class="menu-item level-1" data-drupal-link-system-path="node/69">Water Trailer</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/outreach/special-event-connections" class="menu-item level-1" data-drupal-link-system-path="node/70">Special Event Connections</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/outreach/speakers-bureau" class="menu-item level-1" data-drupal-link-system-path="node/71">Speaker&#039;s Bureau</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/outreach/tours" class="menu-item level-1" data-drupal-link-system-path="node/72">Tours</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        <div class="block block-block-content block-block-content8ace5372-6256-4873-a0cd-91a93cc88704">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2017-06/education-potable.jpg?itok=WLpzKW6J" width="550" height="360" alt="potable water graphic" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Treat your curiosity about water quality to a <a href="/education/blog/virtual-tour-potable-water-treatment">virtual tour</a> of our potable treatment process.</p></div>
+      
+  </div>
+
+
+        <div class="block block-block-content block-block-content8f44cb9c-83b6-488e-9d74-aebe0644b8c7">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2019-08/hands-washing-from-faucet.jpg?itok=oxeUp_hX" width="550" height="360" alt="Washing hands" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Follow the <a href="/journeyofwater">journey of water</a> from snowflake to tap.</p></div>
+      
+  </div>
+
+
+    </div>
+    <div class="dw-mega project-updates">
+        
+
+
+<h2 id="-menu">
+  <a href="#n" role="menuitem">
+    Project Updates <i class="fal fa-angle-down"></i>
+  </a>
+</h2>
+
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+        
+              <ul class="menu menu-level--0" tabindex="-1">
+                          <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/project-updates" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/55">Construction Projects</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/project-updates/gross-reservoir-expansion-project" class="menu-item level-1" data-drupal-link-system-path="node/59">Gross Reservoir Expansion Project</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/project-updates/hillcrest-storage-tank-replacement" class="menu-item level-1" data-drupal-link-system-path="node/57">Hillcrest Storage Tank Replacement</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/project-updates/north-system-renewal" class="menu-item level-1" data-drupal-link-system-path="node/60">North System Renewal</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/project-updates/pipe-replacement" class="menu-item level-1" data-drupal-link-system-path="node/62">Pipe Replacement and Lead Reduction Program Work Areas</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/aquifer-storage-and-recovery-study" class="menu-item level-1" data-drupal-link-system-path="node/99">Aquifer Storage and Recovery</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/project-updates/clarkson-pump-station" class="menu-item level-1" data-drupal-link-system-path="node/20638">Clarkson Street Pump Station Renovation</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        <div class="block block-block-content block-block-content7228cf61-4ed4-4773-9a80-61ad686bd2c6">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2017-03/denver-map.jpg?itok=Wuz4b_DM" width="550" height="360" alt="Denver map" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Find out what <a href="/project-updates">projects</a> we're doing to improve our system.</p></div>
+      
+  </div>
+
+
+        <div class="block block-block-content block-block-content38970922-500f-43a9-a04b-98721885e572">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2018-01/north-system-renewal.jpg?itok=RqWkFL8C" width="550" height="360" alt="North System Renewal Project" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>We are upgrading and modernizing the <a href="/project-updates/north-system-renewal">northern portion</a> of our water system.</p></div>
+      
+  </div>
+
+
+        <div class="block block-block-content block-block-contentc27ba60c-32de-4556-aaf4-65f2831d33fc">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2018-01/good-neighbor-commitment.jpg?itok=0jPQiXvZ" width="550" height="360" alt="Denver Water employee during construction" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>We are committed to being a <a href="/project-updates/pipe-replacement/good-neighbor-commitment">good neighbor</a> during construction projects.</p></div>
+      
+  </div>
+
+
+    </div>
+    <div class="dw-mega recreation">
+        
+
+
+<h2 id="-menu">
+  <a href="#n" role="menuitem">
+    Recreation <i class="fal fa-angle-down"></i>
+  </a>
+</h2>
+
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+        
+              <ul class="menu menu-level--0" tabindex="-1">
+                          <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/recreation" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/73">Recreation Areas</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/antero-resevoir" class="menu-item level-1" data-drupal-link-system-path="node/117">Antero Reservoir</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/cheesman-resevoir" class="menu-item level-1" data-drupal-link-system-path="node/75">Cheesman Reservoir</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/dillon-resevoir" class="menu-item level-1" data-drupal-link-system-path="node/76">Dillon Reservoir</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/eleven-mile-canyon-resevoir" class="menu-item level-1" data-drupal-link-system-path="node/77">Eleven Mile Canyon Reservoir</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/gross-resevoir" class="menu-item level-1" data-drupal-link-system-path="node/78">Gross Reservoir</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/high-line-canal" class="menu-item level-1" data-drupal-link-system-path="node/79">High Line Canal</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/south-platte-river" class="menu-item level-1" data-drupal-link-system-path="node/80">South Platte River</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/waterton-canyon-strontia-springs-resevoir" class="menu-item level-1" data-drupal-link-system-path="node/81">Waterton Canyon/Strontia Springs Reservoir</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/recreation/williams-fork-resevoir" class="menu-item level-1" data-drupal-link-system-path="node/82">Williams Fork Reservoir</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        <div class="block block-block-content block-block-content4e04cbaa-8298-4a88-9746-efc9a6c64766">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2017-03/reservoir-map.jpg?itok=8fxARgNw" width="550" height="360" alt="Reservoir Map" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Find your next place to play at any of our <a href="/recreation">recreation areas</a>.</p></div>
+      
+  </div>
+
+
+        <div class="block block-block-content block-block-content4367b636-13b2-4d51-9595-ba251eb27416">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2017-03/chessman-dam.jpg?itok=ZgvMgdLp" width="550" height="360" alt="Chessman Dam" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Hike the Gill Trail to catch scenic views of <a href="/recreation/cheesman-resevoir">Cheesman Reservoir</a>.</p></div>
+      
+  </div>
+
+
+        <div class="block block-block-content block-block-content7228cf61-4ed4-4773-9a80-61ad686bd2c6">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2017-03/denver-map.jpg?itok=Wuz4b_DM" width="550" height="360" alt="Denver map" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Find out what <a href="/project-updates">projects</a> we're doing to improve our system.</p></div>
+      
+  </div>
+
+
+    </div>
+    <div class="dw-mega your-water">
+        
+
+
+<h2 id="-menu">
+  <a href="#n" role="menuitem">
+    Your Water <i class="fal fa-angle-down"></i>
+  </a>
+</h2>
+
+<nav role="navigation" aria-labelledby="-menu" class="block block-menu navigation menu--main">
+        
+              <ul class="menu menu-level--0" tabindex="-1">
+                          <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/your-water/water-quality" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/83">Water Quality</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/lead" class="menu-item level-1" data-drupal-link-system-path="node/8648">Lead Reduction Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/water-quality-reports" class="menu-item level-1" data-drupal-link-system-path="node/510">Water Quality Reports</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/treated-water-quality-summary" class="menu-item level-1" data-drupal-link-system-path="node/18315">Treated Water Quality Summary</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/water-stagnation" class="menu-item level-1" data-drupal-link-system-path="node/9441">Water Stagnation</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/water-hardness" class="menu-item level-1" data-drupal-link-system-path="node/92">Water Hardness</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/fluoride" class="menu-item level-1" data-drupal-link-system-path="node/87">Fluoride</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/taste-and-odor" class="menu-item level-1" data-drupal-link-system-path="node/90">Taste &amp; Odor</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/dirty-water" class="menu-item level-1" data-drupal-link-system-path="node/85">Dirty Water</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/brewing-beer-home" class="menu-item level-1" data-drupal-link-system-path="node/1736">Brewing Beer at Home</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/disinfection-byproducts" class="menu-item level-1" data-drupal-link-system-path="node/86">Disinfection Byproducts</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/crypto-and-giardia" title="Crypto &amp; Giardia" class="menu-item level-1" data-drupal-link-system-path="node/84">Crypto &amp; Giardia</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/trace-pharmaceuticals" class="menu-item level-1" data-drupal-link-system-path="node/91">Trace Pharmaceuticals</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/hydraulic-fracturing" class="menu-item level-1" data-drupal-link-system-path="node/93">Hydraulic Fracturing</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-quality/perchlorate" class="menu-item level-1" data-drupal-link-system-path="node/89">Perchlorate</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/96">Water Supply &amp; Planning</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/collection-system" class="menu-item level-1" data-drupal-link-system-path="node/914">Collection System</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/watershed-protection-and-management" class="menu-item level-1" data-drupal-link-system-path="node/521">Watershed Protection &amp; Management</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/supply-data-and-reports" class="menu-item level-1" data-drupal-link-system-path="node/1105">Supply Data &amp; Reports</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/water-use" class="menu-item level-1" data-drupal-link-system-path="node/97">Water Use</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/efficiency-plan" class="menu-item level-1" data-drupal-link-system-path="node/100">Efficiency Plan</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/climate-change" class="menu-item level-1" data-drupal-link-system-path="node/430">Climate Change</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/drought" class="menu-item level-1" data-drupal-link-system-path="node/103">Water Shortage</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/environmental-planning-and-stewardship" class="menu-item level-1" data-drupal-link-system-path="node/98">Environmental Planning &amp; Stewardship</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/long-range-planning" class="menu-item level-1" data-drupal-link-system-path="node/101">Long-Range Planning</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/aquifer-storage-and-recovery-study" class="menu-item level-1" data-drupal-link-system-path="node/99">Aquifer Storage and Recovery</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/downstream-reservoir-program" class="menu-item level-1" data-drupal-link-system-path="node/105">Downstream Reservoir Program</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/water-supply-and-planning/wise" class="menu-item level-1" data-drupal-link-system-path="node/924">WISE</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/your-water/recycled-water" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/106">Recycled Water</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/recycled-water/treatment-system" class="menu-item level-1" data-drupal-link-system-path="node/107">Recycled Water Treatment System</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/recycled-water/quality-standards" class="menu-item level-1" data-drupal-link-system-path="node/109">Recycled Water Quality Standards</a>
+              </li>
+                      <li class="menu-item" tabindex="-1" role="none">
+        <a href="/your-water/recycled-water/recycled-water-training-and-tours" class="menu-item level-1" data-drupal-link-system-path="node/110">Recycled Water Training</a>
+              </li>
+        </ul>
+  
+              </li>
+                      <li class="menu-item menu-item--expanded" tabindex="-1" role="none">
+        <a href="/your-water/treatment-process" class="menu-item menu-item--expanded level-0" data-drupal-link-system-path="node/94">Treatment Process</a>
+                                <ul class="menu menu-level--1" tabindex="-1">
+                          <li class="menu-item" tabindex="-1" role="none">
+        <a href="/education/blog/virtual-tour-potable-water-treatment" class="menu-item level-1" data-drupal-link-system-path="node/1075">Virtual Tour: Potable Water Treatment</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+        <div class="block block-block-content block-block-content8696f76d-cf50-400c-8c6b-ccd0c964a78d">
+  
+    
+      
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/menu_image_block_550x360_2x_/public/2019-12/lead-service-line-web.jpg?itok=hJMCV93k" width="550" height="360" alt="Lead service line" loading="lazy" typeof="foaf:Image" class="image-style-menu-image-block-550x360-2x-" />
+
+
+</div>
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Have questions about <a href="/your-water/water-quality/lead">lead</a>? Get some answers.</p></div>
+      
+  </div>
+
+
+    </div>
+    <span class="close"><i class="fas fa-times"></i></span>
+                      <h2 class="visually-hidden" id="block-dw-zen-main-menu-menu">Main navigation</h2>
+  </nav>
+</div>
+<div id="block-homepageheadericons" class="block block-block-content block-block-contente360c233-0608-46ed-a780-1faedce12fb9">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="homepage-header-icons">
+
+<div class="lead">
+<a href="/your-water/water-quality/lead"><span><i class="fas fa-minus-square"></i></span>Get Lead Reduction<br /> Program Facts</a>
+</div>
+
+<!--<div class="pH">
+<a href="/your-water/water-quality/lead/ph"><span><i class="fas fa-balance-scale-right"></i></span>Find out about<br> pH Adjustment</a>
+</div>-->
+
+<!--<div class="summer-watering">
+<a href="/residential/rebates-and-conservation-tips/summer-watering-rules" ><span><i class="fas fa-sprinkler"></i></span>See Summer<br> Watering Rules</a>
+</div>-->
+
+<div class="start-stop-service">
+<a href="/residential/services-and-information/start-or-stop-service"><span><i class="fas fa-traffic-light"></i></span>Start or<br /> Stop Service</a>
+</div>
+
+<div class="rebates">
+<a href="/residential/rebates-and-conservation-tips/residential-rebates"><span><i class="fas fa-hand-holding-usd"></i></span>Apply for<br /> a Rebate </a>
+</div>
+
+<div class="bids-contracts">
+<a href="/contractors/bid-and-contract-opportunities"><span><i class="fas fa-file-contract"></i></span>Check out<br /> Bids &amp; Contracts</a>
+</div>
+
+<!--<div class="reservoir levels">
+<a href="/your-water/water-supply-and-planning/supply-data-and-reports/reservoir-levels"><span><i class="fas fa-water"></i></span>See Recent<br> Reservoir Levels</a>
+</div>-->
+
+<div class="report-a-problem">
+<a href="/contact/emergencies"><span><i class="fas fa-exclamation"></i></span>Report a Problem<br /> or Emergency</a>
+</div>
+
+<!--<div class="2019-rates">
+<a href="/residential/billing-and-rates/2019-rates"><span><i class="fas fa-dollar-sign"></i></span>Review 2019<br> Residential Rates</a>
+</div>-->
+
+<!--<div class="journey-of-water">
+<a href="/journeyofwater"><span><i class="fab fa-youtube"></i></span>Follow the Journey<br> of Water</a>
+</div>-->
+
+<!--<div class="tap">
+<a href="https://www.denverwatertap.org">
+<img src="/themes/custom/dw_zen/images/tap-logo.png" alt="Denver Water Tap Logo"><br>
+Stories and Video</a>
+</div>-->
+</div>
+</div>
+      
+  </div>
+<div id="block-sitealertcustomercare" class="block block-block-content block-block-content7dd77ae4-25cd-4e9a-8ede-9382af6c97bb">
+    <div class="alert severe">
+    <h2>ALERT</h2>
+    
+            <div class="field field--name-field-date-time field--type-datetime field--label-hidden field__item"><time datetime="2022-03-01T20:10:00Z" class="datetime">03/01/2022 - 1:10 pm</time>
+</div>
+      
+    <div class="text">
+      Callers will experience long wait times. See automated ways to pay (Pay My Bill). For other inquiries, click for our
+
+      
+            <div class="field field--name-field-link field--type-link field--label-hidden field__item"><a href="/contact/customer-care-contact">contact webform.</a></div>
+        
+    </div>
+    <span class="close"><i class="fas fa-times"></i></span>
+  </div>
+  </div>
+
+
+  
+</header>
+
+<div class="layout-center">
+  <div class="layout-3col">
+
+                              
+    <div class="layout-3col__full">
+      
+    </div>
+
+    <main class="layout-3col__full" role="main">
+
+      
+
+<div data-drupal-messages-fallback class="hidden"></div>
+
+
+              <a href="javascript:window.print()" class="print-button standalone">Print <i class="fal fa-print"></i></a>
+            
+
+<div id="block-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+        
+<nav class="breadcrumb " role="navigation" aria-labelledby="system-breadcrumb">
+  <h2 id="system-breadcrumb" class="visually-hidden">Breadcrumb</h2>
+  <ol class="breadcrumb__list">
+          <li class="breadcrumb__item">
+                  <a href="/">Home</a>
+                      </li>
+      </ol>
+</nav>
+
+  </div>
+
+
+      <a href="#skip-link" class="visually-hidden visually-hidden--focusable" id="main-content">Back to top</a>      
+      
+
+
+
+      
+
+  
+    
+
+  <article class=""  data-history-node-id="111" role="article" about="/home" typeof="schema:WebPage">
+    
+      <span property="schema:name" content="Home" class="rdf-meta hidden"></span>
+
+
+  
+      
+      <div class="field field--name-field-content field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">  <div class="paragraph paragraph--type--content paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__item"><p style="font-family: Segoe, 'Segoe UI', 'DejaVu Sans', 'Trebuchet MS', Verdana, sans-serif; font-size: 30px; font-weight: bold; color: #002957; text-align: center;">Life is better with water.</p>
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--embedded-content paragraph--view-mode--default">
+          
+            <div class="field field--name-field-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-rebates-and-conservation-tips view-id-rebates_and_conservation_tips view-display-id-block_2 js-view-dom-id-2480cbb782191f2f00458e472f766cc6e601332f83786417c2561614f0f6d934">
+  
+    
+      <div class="view-header">
+      <h2>Rebates &amp; Efficiency Tips</h2>
+    </div>
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <a href="/residential/efficiency-tip/garden-box-sale-now" hreflang="en">
+<img src="/sites/default/files/styles/175x125_thumb/public/2022-02/garden-in-a-box-2022-naturally-native.jpg?itok=9y8KCwxT" width="175" height="125" alt="The &quot;Natrually Native&quot; garden is one of many Garden In A Box offerings from Resource Central" loading="lazy" typeof="foaf:Image" class="image-style-_75x125-thumb" />
+
+</a>
+</div></div><div class="views-field views-field-field-topic"><div class="field-content">Residential Efficiency Tip</div></div><div class="views-field views-field-title"><span class="field-content"><a href="/residential/efficiency-tip/garden-box-sale-now" hreflang="en">Garden In A Box, is on sale now</a></span></div><div class="views-field views-field-field-teaser"><div class="field-content">Water-wise gardening for our climate. </div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <a href="/residential/efficiency-tip/are-you-efficient-your-indoor-water-use" hreflang="en">
+<img src="/sites/default/files/styles/175x125_thumb/public/2019-01/shower-head-adjustment.jpg?itok=dztjCzxa" width="175" height="125" alt="Denver water employee replacing shower head." loading="lazy" typeof="foaf:Image" class="image-style-_75x125-thumb" />
+
+</a>
+</div></div><div class="views-field views-field-field-topic"><div class="field-content">Residential Efficiency Tip</div></div><div class="views-field views-field-title"><span class="field-content"><a href="/residential/efficiency-tip/are-you-efficient-your-indoor-water-use" hreflang="en">Are you efficient with your indoor water use?</a></span></div><div class="views-field views-field-field-teaser"><div class="field-content">There are simple things you can do to ensure efficiency.</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <a href="/residential/efficiency-tip/stop-indoor-water-leaks" hreflang="en">
+<img src="/sites/default/files/styles/175x125_thumb/public/2020-12/Nip-the-drip300x271.jpg?itok=l7PM-tq4" width="175" height="125" alt="Annual household leaks waster 1 trillion gallons nationwide equals water use in 11 million homes" loading="lazy" typeof="foaf:Image" class="image-style-_75x125-thumb" />
+
+</a>
+</div></div><div class="views-field views-field-field-topic"><div class="field-content">Residential Efficiency Tip</div></div><div class="views-field views-field-title"><span class="field-content"><a href="/residential/efficiency-tip/stop-indoor-water-leaks" hreflang="en">Stop indoor water leaks</a></span></div><div class="views-field views-field-field-teaser"><div class="field-content">Household leaks can waste nearly 1 trillion gallons of water a year nationwide.</div></div></div>
+
+    </div>
+  
+            <div class="view-footer">
+      See all:<br>
+<a href="/residential/rebates-and-conservation-tips">Residential Rebates &amp; Tips</a><br>
+<a href="/business/rebates-and-conservation-tips">Business Rebates &amp; Tips</a>
+    </div>
+    </div>
+</div>
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--embedded-content paragraph--view-mode--default">
+          
+            <div class="field field--name-field-view field--type-viewsreference field--label-hidden field__item"><div class="views-element-container"><div class="view view-education-and-outreach-articles view-id-education_and_outreach_articles view-display-id-block_2 js-view-dom-id-586b2f1bf06d485374865717ae1ef0f94273b70e76630243bf23f9bf84f87e0c">
+  
+    
+      <div class="view-header">
+      <h2>Education &amp; Outreach</h2>
+    </div>
+      
+      <div class="view-content">
+          <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <a href="/outreach/blog/help-get-lead-out" hreflang="en">
+<img src="/sites/default/files/styles/175x125_thumb/public/2022-03/Help-get-the-lead-out.jpg?itok=N_XgjOH0" width="175" height="125" alt="Child drinking water, camera focused on child&#039;s eyes." loading="lazy" typeof="foaf:Image" class="image-style-_75x125-thumb" />
+
+</a>
+</div></div><div class="views-field views-field-field-information-type"><div class="field-content">Outreach</div></div><div class="views-field views-field-title"><span class="field-content"><a href="/outreach/blog/help-get-lead-out" hreflang="en">Help get the lead out</a></span></div><div class="views-field views-field-field-teaser"><div class="field-content">Friendly reminders for the Lead Reduction Program.</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <a href="/education/blog/winters-crucial-gift" hreflang="en">
+<img src="/sites/default/files/styles/175x125_thumb/public/2022-03/measuring-snowpack-400x279.jpg?itok=_ZI93SMT" width="175" height="125" alt="Denver Water employee holding long metal snow measuring device." loading="lazy" typeof="foaf:Image" class="image-style-_75x125-thumb" />
+
+</a>
+</div></div><div class="views-field views-field-field-information-type"><div class="field-content">Education</div></div><div class="views-field views-field-title"><span class="field-content"><a href="/education/blog/winters-crucial-gift" hreflang="en">Winter’s crucial gift</a></span></div><div class="views-field views-field-field-teaser"><div class="field-content">How much snow falls in Colorado’s high country sets the tone for water supply.</div></div></div>
+    <div class="views-row"><div class="views-field views-field-field-image"><div class="field-content">  <a href="/education/blog/your-average-winter-consumption" hreflang="en">
+<img src="/sites/default/files/styles/175x125_thumb/public/2019-01/hands-washing-from-faucet.jpg?itok=KoE1-pbD" width="175" height="125" alt="Hands washing from faucet." loading="lazy" typeof="foaf:Image" class="image-style-_75x125-thumb" />
+
+</a>
+</div></div><div class="views-field views-field-field-information-type"><div class="field-content">Education</div></div><div class="views-field views-field-title"><span class="field-content"><a href="/education/blog/your-average-winter-consumption" hreflang="en">Your average winter consumption</a></span></div><div class="views-field views-field-field-teaser"><div class="field-content">The first tier in Denver Water’s rate structure is for essential indoor water use.</div></div></div>
+
+    </div>
+  
+            <div class="view-footer">
+      See all: <a href="/education/educational-articles">Education &amp; Outreach</a>
+    </div>
+    </div>
+</div>
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--content paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-content field--type-text-long field--label-hidden field__item"><h1 class="highlight clear"><span>Denver Water Services</span></h1>
+<p> </p></div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--embedded-content paragraph--view-mode--default">
+          
+            <div class="field field--name-field-block field--type-block-field field--label-hidden field__item"><div id="block-homepageforresidents" class="block block-block-content block-block-content919867ab-10e3-4c56-a295-e1e50a1d124a sidebar-block">
+
+
+
+  <a href="/residential/services-and-information" class="no-bg no-padding">
+    
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/sidebar_image/public/2017-05/dw-showerhead-replacement_1277.jpg?itok=slOJvgHj" width="500" height="334" alt="Denver water worker replacing showerhead" loading="lazy" typeof="foaf:Image" class="image-style-sidebar-image" />
+
+
+</div>
+      
+    <div class="content-wrap">
+              <h2>For Residents</h2>
+            
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Get services, general information, conservation tips and check out our rebate offerings too.</p></div>
+      
+              <i class="fa fa-share link-icon" aria-hidden="true" title="Link icon"></i>
+          </div>
+        </a>
+  </div>
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--embedded-content paragraph--view-mode--default">
+          
+            <div class="field field--name-field-block field--type-block-field field--label-hidden field__item"><div id="block-homepageforbusinesses" class="block block-block-content block-block-content08ad45ad-08fa-4918-8e2f-404e5ce72293 sidebar-block">
+
+
+
+  <a href="/business/services-and-information" class="no-bg no-padding">
+    
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/sidebar_image/public/2017-05/dw-business-woman_0854.jpg?itok=Y9UbasIg" width="500" height="334" alt="Woman in business attire" loading="lazy" typeof="foaf:Image" class="image-style-sidebar-image" />
+
+
+</div>
+      
+    <div class="content-wrap">
+              <h2>For Businesses</h2>
+            
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Get help with a permit, plan, or tips to help your business conserve water and save money.</p></div>
+      
+              <i class="fa fa-share link-icon" aria-hidden="true" title="Link icon"></i>
+          </div>
+        </a>
+  </div>
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--embedded-content paragraph--view-mode--default">
+          
+            <div class="field field--name-field-block field--type-block-field field--label-hidden field__item"><div id="block-homepageforcontractors" class="block block-block-content block-block-contentd97f7202-ef69-43ff-a586-d49a34edd459 sidebar-block">
+
+
+
+  <a href="/contractors/construction-information" class="no-bg no-padding">
+    
+            <div class="field field--name-field-image field--type-image field--label-hidden field__item">  
+<img src="/sites/default/files/styles/sidebar_image/public/2017-05/dw-engineering_construction.jpg?itok=bA9xcpiB" width="500" height="334" alt="Construction workers on site" loading="lazy" typeof="foaf:Image" class="image-style-sidebar-image" />
+
+
+</div>
+      
+    <div class="content-wrap">
+              <h2>For Contractors</h2>
+            
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>We're here to help with everything from general services and rebates to planning and permitting.</p></div>
+      
+              <i class="fa fa-share link-icon" aria-hidden="true" title="Link icon"></i>
+          </div>
+        </a>
+  </div>
+</div>
+      
+      </div>
+</div>
+          </div>
+  
+  </article>
+
+
+
+
+    </main>
+
+    
+    
+  </div>
+
+
+</div>
+
+  
+<footer class="footer " role="contentinfo">
+      <div id="block-footer-top" class="block block-block-content block-block-content70198c93-ac6c-4bfb-bb32-eb81e3e2debd">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="col">
+<div class="customer-care">
+<h3>Customer Care</h3>
+
+<p><a href="tel:303-893-2444">303-893-2444</a></p>
+</div>
+</div>
+
+<div class="col">
+<div class="emergencies">
+<h3>Emergencies</h3>
+
+<p><a href="tel:303-628-6801">303-628-6801</a></p>
+</div>
+</div>
+
+<div class="col">
+<div class="social-media">
+<a href="https://twitter.com/DenverWater" target="_blank"><i class="fab fa-twitter"></i><span class="offscreen">Twitter</span></a>
+<a href="https://www.facebook.com/DenverWater/" target="_blank"><i class="fab fa-facebook-square"></i><span class="offscreen">Facebook</span></a>
+<a href="https://www.linkedin.com/company/denverwater/" target="_blank"><i class="fab fa-linkedin"></i><span class="offscreen">LinkedIn</span></a>
+<a href="https://www.instagram.com/denver_water" target="_blank"><i class="fab fa-instagram"></i><span class="offscreen">Instagram</span></a>
+<a href="https://www.youtube.com/user/YourDenverWater" target="_blank"><i class="fab fa-youtube"></i><span class="offscreen">YouTube</span></a></div>
+</div>
+</div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-dw-zen-footer-menu" id="block-dw-zen-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-dw-zen-footer-menu">Footer menu</h2>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item menu-item--collapsed">
+        <a href="/about-us" title="About Denver Water" data-drupal-link-system-path="node/162">About Us</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/careers" data-drupal-link-system-path="node/15">Careers</a>
+              </li>
+                <li class="menu-item menu-item--collapsed">
+        <a href="/contact" data-drupal-link-system-path="node/1067">Contact Us</a>
+              </li>
+                <li class="menu-item">
+        <a href="/contractors/bid-and-contract-opportunities" data-drupal-link-system-path="node/49">Contracts &amp; Bids</a>
+              </li>
+                <li class="menu-item">
+        <a href="/contractors/construction-information/design-standards" data-drupal-link-system-path="node/1494">Design Standards</a>
+              </li>
+                <li class="menu-item">
+        <a href="/about-us/investor-relations" data-drupal-link-system-path="node/1077">Investor/Financial Info</a>
+              </li>
+                <li class="menu-item">
+        <a href="/your-water/water-quality/lead" data-drupal-link-system-path="node/8648">Lead Reduction Program</a>
+              </li>
+                <li class="menu-item">
+        <a href="/about-us/how-we-operate/operating-rules" data-drupal-link-system-path="node/898">Operating Rules</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+<div id="block-tapnewslettersignup" class="block block-block-content block-block-contentac0dd1b4-ab5c-4180-bea6-c378129e9fb6">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><a href="/tap"><img src="/sites/default/files/tap-logo-white.png" alt="TAP: News to Hydrate Your Mind" width="250" height="68" /></a></div>
+      
+  </div>
+<div id="block-footer-copyright" class="block block-block-content block-block-content4dfe29c2-b2a6-493f-ae7e-4afd6c66ff21">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>© 2022 Denver Water. All rights reserved. <a class="privacy" href="/privacy-policy">Privacy Policy</a></p>
+</div>
+      
+  </div>
+
+  </footer>
+
+
+
+
+  </div>
+
+  
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/111","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","text_resize":{"text_resize_scope":"body","text_resize_minimum":14,"text_resize_maximum":18,"text_resize_line_height_allow":false,"text_resize_line_height_min":null,"text_resize_line_height_max":null},"suppressDeprecationErrors":true,"masonry":{".field--name-field-mason-grid-photos":{"masonry_ids":["masonry_default"],"item_selector":".field__item","column_width":"","column_width_units":"px","gutter_width":0,"resizable":true,"animated":true,"animation_duration":500,"fit_width":false,"rtl":false,"images_first":true,"images_lazyload":false,"lazyload_selector":"lazyload","lazyloaded_selector":"lazyloaded","stamp":"","percent_position":false,"extra_options":[]}},"ajaxPageState":{"libraries":"classy\/base,classy\/messages,core\/normalize,dw_zen\/accordion,dw_zen\/article,dw_zen\/autocomplete,dw_zen\/base,dw_zen\/box,dw_zen\/breadcrumb,dw_zen\/collapsible-fieldset,dw_zen\/comment,dw_zen\/custom-scripts,dw_zen\/fancybox,dw_zen\/font-awesome,dw_zen\/fonts,dw_zen\/footer,dw_zen\/form-item,dw_zen\/form-table,dw_zen\/header,dw_zen\/hidden,dw_zen\/homepage,dw_zen\/inline-links,dw_zen\/inline-sibling,dw_zen\/layouts,dw_zen\/nav-menu,dw_zen\/navbar,dw_zen\/pager,dw_zen\/paragraph,dw_zen\/print-none,dw_zen\/progress-bar,dw_zen\/progress-throbber,dw_zen\/recreation-project,dw_zen\/resizable-textarea,dw_zen\/responsive-video,dw_zen\/sidebar,dw_zen\/skip-link,dw_zen\/table-drag,dw_zen\/translate,dw_zen\/views,dw_zen\/waypoints,dw_zen\/wireframe,extlink\/drupal.extlink,fontawesome\/fontawesome.svg,google_analytics\/google_analytics,masonry\/masonry.layout,paragraphs\/drupal.paragraphs.unpublished,search_api_autocomplete\/search_api_autocomplete,system\/base,views\/views.module","theme":"dw_zen","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":false,"extNofollow":false,"extNoreferrer":false,"extFollowNoOverride":false,"extClass":"0","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"","extInclude":"^.+\\.(([pP][dD][fF]))$","extCssExclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"0","mailtoLabel":"(link sends email)","extUseFontAwesome":false,"extIconPlacement":"append","extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","whitelistedDomains":null}},"search_api_autocomplete":{"search":{"auto_submit":true,"min_length":3}},"user":{"uid":0,"permissionsHash":"4bea8bc85c37ca87a3488a0482050410cd0c700e028e9e95041ff7ce8047452b"}}</script>
+<script src="/sites/default/files/js/js_LmsRYj79uVpC3XHGwJeum2fIi8wj6AQU4YbAxdqOTNQ.js"></script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="/sites/default/files/js/js_c81pb5ZX3FxDJevR4W9IkGCXa6okgcbMABmeMLN6COo.js"></script>
+
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+            var sz = document.createElement('script');
+            sz.type = 'text/javascript';
+            sz.async = true;
+            sz.src = '//siteimproveanalytics.com/js/siteanalyze_57488.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+    </script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-76d8248f92cdd52ee6e","applicationID":"961187988","transactionName":"MVxTMUEEDUsDAkJcWAgWcAZHDAxWTSVEQEcHVW0LXAEGZCEOWEFFCVVdAEE5LVcGBGBcUhF6XgtHFwxUDgREGAkQUFQS","queueTime":0,"applicationTime":637,"atts":"HRtQRwkeHkU=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
 
     <meta charset="UTF-8" />
     <!-- They give the browser the right encoding mechanism. This is 
