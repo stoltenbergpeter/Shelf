@@ -74,6 +74,7 @@
 
     customPlugin.subscribe('WebChatService.started', function (e) {
       console.log('Chat started', e);
+	    customPlugin.command('WebChat.open')
     });
 
     customPlugin.subscribe('WebChatService.ended', function (e) {
@@ -83,7 +84,7 @@
 
 
 
-  <button type="button" id="chat-button-simple" onclick="customPlugin.command('WebChat.open');">Start Chat (simple)</button>
+ 
 
   <script type="text/javascript">
 		function getAdvancedConfig() {
@@ -140,7 +141,7 @@
 				}
 			};
 		}
-	  customPlugin.command('WebChat.minimize', getAdvancedConfig())
+	  
 	</script>
 	
 </body>
